@@ -18,7 +18,7 @@ const Header: React.FC = () => {
 
       <button
         type="button"
-        className="text-black text-opacity-70 focus:outline-none outline-none hidden lg-max:inline-flex">
+        className="text-black text-opacity-50 focus:outline-none outline-none hidden lg-max:inline-flex px-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="currentColor"
@@ -28,7 +28,7 @@ const Header: React.FC = () => {
         </svg>
       </button>
 
-      <nav className="flex lg-max:w-full lg-max:absolute lg-max:top-full -mx-4 lg-max:shadow-md">
+      <nav className="flex lg-max:w-full lg-max:absolute lg-max:top-full -mx-4 lg-max:shadow-md lg-max:hidden">
         <ul className="w-full flex lg-max:flex-col">
           <li>
             <a

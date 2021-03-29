@@ -26,6 +26,9 @@ module.exports = {
         'sm-max': { max: '639px' },
         // => @media (max-width: 639px) { ... }
       },
+      backgroundImage: (theme) => ({
+        'hero-wave': "url('../assets/images/components/wave.svg')",
+      }),
     },
   },
   variants: {
