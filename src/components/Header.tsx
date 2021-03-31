@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/navbar.js';
 
 const Header: React.FC = () => {
   return (
@@ -17,6 +18,11 @@ const Header: React.FC = () => {
       </a>
 
       <button
+        data-toggle="toggle"
+        data-target="#navbarMenu"
+        data-addclass=""
+        data-removeclass="hidden"
+        aria-expanded="false"
         type="button"
         className="text-black text-opacity-50 focus:outline-none outline-none hidden lg-max:inline-flex px-2">
         <svg
@@ -28,26 +34,28 @@ const Header: React.FC = () => {
         </svg>
       </button>
 
-      <nav className="flex lg-max:w-full lg-max:absolute lg-max:top-full -mx-4 lg-max:shadow-md lg-max:hidden">
+      <nav
+        id="navbarMenu"
+        className="lg:flex hidden lg-max:w-full lg-max:absolute lg-max:top-full -mx-4 lg-max:shadow-md bg-white">
         <ul className="w-full flex lg-max:flex-col">
           <li>
             <a
               href="link.html"
-              className="flex w-full lg-max:border lg-max:border-b-0 poppins font-semibold text-black text-opacity-60 hover:text-opacity-70 px-15px py-2 hover:bg-gray-50">
+              className="flex w-full lg-max:border lg-max:border-b-0 poppins font-semibold text-black text-opacity-60 hover:text-opacity-70 px-15px py-2 lg-max:hover:bg-gray-50">
               Portfolios
             </a>
           </li>
           <li>
             <a
               href="link.html"
-              className="flex w-full lg-max:border lg-max:border-b-0 poppins font-semibold text-black text-opacity-60 hover:text-opacity-70 px-15px py-2 hover:bg-gray-50">
+              className="flex w-full lg-max:border lg-max:border-b-0 poppins font-semibold text-black text-opacity-60 hover:text-opacity-70 px-15px py-2 lg-max:hover:bg-gray-50">
               Contact
             </a>
           </li>
           <li>
             <a
               href="link.html"
-              className="flex w-full lg-max:border poppins font-semibold text-black text-opacity-60 hover:text-opacity-70 px-15px py-2 hover:bg-gray-50">
+              className="flex w-full lg-max:border poppins font-semibold text-black text-opacity-60 hover:text-opacity-70 px-15px py-2 lg-max:hover:bg-gray-50">
               About
             </a>
           </li>
