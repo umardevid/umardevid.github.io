@@ -1,14 +1,14 @@
 import React from 'react';
-import './App.css';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Header from './components/Header';
-import Hero from './components/Hero';
+import PageContainer from './container/Page';
 
 const App: React.FC = () => {
   return (
-    <div>
+    <Router>
       <Header />
-      <Hero />
-    </div>
+      <PageContainer />
+    </Router>
   );
 };
 

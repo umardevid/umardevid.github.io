@@ -1,11 +1,12 @@
 import React from 'react';
-import '../styles/navbar.js';
+import { Link } from 'react-router-dom';
+import '../styles/toggle.js';
 
 const Header: React.FC = () => {
   return (
     <header className="flex lg-max:flex-wrap items-center justify-between px-4 lg:px-75px h-24 relative">
-      <a
-        href="index.html"
+      <Link
+        to="/"
         className="flex items-center font-bold poppins text-lg text-black text-opacity-80">
         <img
           src="assets/avatars/avatar.png"
@@ -15,7 +16,7 @@ const Header: React.FC = () => {
           className="mr-4"
         />
         Umar Dev
-      </a>
+      </Link>
 
       <button
         data-toggle="toggle"
@@ -39,11 +40,11 @@ const Header: React.FC = () => {
         className="lg:flex hidden lg-max:w-full lg-max:absolute lg-max:top-full -mx-4 lg-max:shadow-md bg-white">
         <ul className="w-full flex lg-max:flex-col">
           <li>
-            <a
-              href="link.html"
+            <Link
+              to="/portfolios"
               className="flex w-full lg-max:border lg-max:border-b-0 poppins font-semibold text-black text-opacity-60 hover:text-opacity-70 px-15px py-2 lg-max:hover:bg-gray-50">
               Portfolios
-            </a>
+            </Link>
           </li>
           <li>
             <a
