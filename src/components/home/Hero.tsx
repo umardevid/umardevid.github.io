@@ -3,7 +3,7 @@ import React from 'react';
 const Hero: React.FC = () => {
   return (
     <div
-      className="flex justify-center items-center -mt-24 bg-hero-wave bg-no-repeat bg-bottom bg-contain"
+      className="flex w-full justify-center items-center -mt-24 bg-hero-wave bg-no-repeat bg-bottom bg-contain"
       style={{ height: '100vh' }}>
       <div>
         <h1 className="lg:text-6xl md-max:text-5xl md:text-6xl lg-max:text-center poppins font-bold px-4">

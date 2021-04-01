@@ -7,14 +7,16 @@ import Home from '../pages/Home';
 
 const Page: React.FC = () => {
   return (
-    <Switch>
-      <Route path="/portfolios">
-        <Portfolios />
-      </Route>
-      <Route path="/">
-        <Home />
-      </Route>
-    </Switch>
+    <div className="flex justify-center px-4 lg:px-75px">
+      <Switch>
+        <Route path="/portfolios">
+          <Portfolios />
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </div>
   );
 };
 
